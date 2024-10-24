@@ -16,7 +16,7 @@ public class figuras {
         superficie = scan.nextInt();
         System.out.println("Teclee a opcion desexada");
 
-        if () //esto es para la "opcion incorrecta"
+        if (true) //esto es para la "opcion incorrecta"
 
 
         switch (superficie) {
@@ -37,4 +37,4 @@ public class figuras {
         }
 
     }
-}
+
