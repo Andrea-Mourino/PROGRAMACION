@@ -11,21 +11,39 @@ public class AreaRectangulo {
         Scanner scan = new Scanner(System.in);
 
         int base=0;
-        System.out.println("Ingrese la base: " + base);
         int altura=0;
-        System.out.println("Ingrese la altura: " + altura);
 
-        for( int i=10; i<=10; i++) {
-            int j = scan.nextInt();
-
-            if (j > 0) {
-                base++;
+        do {
+            System.out.print("Introduce a base do rectángulo (valor positivo): ");
+            if (scan.hasNextDouble()) {
+                base = scan.nextInt();
+                if (base <= 0) {
+                    System.out.println("Erro: A base debe ser un valor positivo.");
+                }
+            } else {
+                System.out.println("Erro: Debes introducir un número válido.");
+                scan.next(); // Limpa a entrada incorrecta
             }
-            else if (j > 0) {
-                base++;
+        } while (base <= 0);
+
+        // Solicitar e validar a altura
+        do {
+            System.out.print("Introduce a altura do rectángulo (valor positivo): ");
+            if (scan.hasNextDouble()) {
+                altura = scan.nextInt();
+                if (altura <= 0) {
+                    System.out.println("Erro: A altura debe ser un valor positivo.");
+                }
+            } else {
+                System.out.println("Erro: Debes introducir un número válido.");
+                scan.next(); // Limpa a entrada incorrecta
             }
+        } while (altura <= 0);
 
-        }
+        // Calcular a área do rectángulo
+        double area = base * altura;
+        System.out.println("A área do rectángulo é: " + area);
 
+        scan.close();
     }
 }
