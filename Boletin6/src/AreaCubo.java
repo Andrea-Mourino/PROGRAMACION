@@ -14,10 +14,14 @@ public class AreaCubo {
         int volume= 0;
 
         for (int i= 0; i<area; i++) {
-
-
+            System.out.println("Ingresa a area del cubo: " + area);
+            area = sc.nextInt();
         }
 
+        for (int j= 0; j<volume; j++) {
+            System.out.println("Ingresa el volumen del cubo: " + volume);
+            volume = sc.nextInt();
+        }
 
     }
 }
