@@ -19,5 +19,4 @@ public class ElevarM {
         return m * elevarNumero(m,m2-1);
     }
 
-
 }
