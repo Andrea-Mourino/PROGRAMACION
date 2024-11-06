@@ -9,6 +9,12 @@ import java.util.Scanner;
 public class ElevarM {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Indicame la base:"); //es para mostrar al usuario (es opcional)
+        int m = sc.nextInt(); //es para que el usuario indique el numero
+        System.out.println("Indicame el exponente:");
+        int m2 = sc.nextInt(); //es para que indique el numero elevado
+        int resultado = elevarNumero(m,m2); //Llamada a funcion de elevar numero
+        System.out.println(resultado);
 
     }
 

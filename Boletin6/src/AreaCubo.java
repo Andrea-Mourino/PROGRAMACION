@@ -11,19 +11,19 @@ public class AreaCubo {
         Scanner sc = new Scanner(System.in);
 
         int area= 0;
-        int volume= 0;
+        int volumen = 0;
 
-        if (area>volumen)
+        if (area>volumen){
             System.out.println("Ingresa a area del cubo: " + area);
             area = sc.nextInt();
         }
 
 
-            System.out.println("Ingresa el volumen del cubo: " + volume);
-            volume = sc.nextInt();
+            System.out.println("Ingresa el volumen del cubo: " + volumen);
+            volumen = sc.nextInt();
         }
 
     }
-}
+
 
 //No compila y tengo que arreglarlo
