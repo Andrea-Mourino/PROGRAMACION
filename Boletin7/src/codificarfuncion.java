@@ -37,15 +37,15 @@ public class codificarfuncion {
         System.out.println("Matriz Orixinal:");
         imprimirMatriz(matrizOrixinal);
 
-        System.out.println("\nMatriz Copia:");
+        System.out.println("Matriz Copia:");
         imprimirMatriz(matrizCopia);
 
         // Modificar a copia para comprobar que non afecta á orixinal.
         matrizCopia[0][0] = 99;
-        System.out.println("\nMatriz Orixinal despois de modificar a copia:");
+        System.out.println("Matriz Orixinal despois de modificar a copia:");
         imprimirMatriz(matrizOrixinal);
 
-        System.out.println("\nMatriz Copia despois de modificación:");
+        System.out.println("Matriz Copia despois de modificación:");
         imprimirMatriz(matrizCopia);
     }
 
