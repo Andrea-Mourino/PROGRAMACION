@@ -5,59 +5,26 @@
  **/
 
 public class codificarfuncion {
-    public static int[][] copiarMatriz(int[][] matriz) {
-        if (matriz == null) {
-
-            return null; // Devolve null se a matriz orixinal é null.
+    public static void main (String [] args) {
+        int lista[]= new int [10];
+        for (int i=0; i<lista.length; i++) {
+            lista [i] = i*2;
         }
+    }
 
-// Crear unha nova matriz coas mesmas dimensións que a orixinal.
-        int[][] copia = new int[matriz.length][];
-        for (int i; i < matriz.length; i++) {
-
-// Copiar cada fila usando `clone` ou creando unha nova.
-            copia[i] = matriz[i].length();
+    public static int [] copiarLista(int [] listaACopiar){
+        int[] novaLista;
+        novaLista = new int [listaACopiar.length];
+        for (int i=0; i<novaLista.length; i++) {
+            novaLista[i] = listaACopiar[i];
         }
-
-        return copia;
+        return novaLista;
 
     }
 
-    public static void main (String[] args) {
-        // Exemplo de uso:
-        int [] [] matrizOrixinal = {
-                {1, 2, 3},
-                {4, 5, 6},
-                {7, 8, 9}
-        };
 
-        int[][] matrizCopia = copiarMatriz(matrizOrixinal);
 
-        // Imprimir ambas matrices para comprobar que son independentes.
-        System.out.println("Matriz Orixinal:");
-        imprimirMatriz(matrizOrixinal);
 
-        System.out.println("Matriz Copia:");
-        imprimirMatriz(matrizCopia);
-
-        // Modificar a copia para comprobar que non afecta á orixinal.
-        matrizCopia[0][0] = 99;
-        System.out.println("Matriz Orixinal despois de modificar a copia:");
-        imprimirMatriz(matrizOrixinal);
-
-        System.out.println("Matriz Copia despois de modificación:");
-        imprimirMatriz(matrizCopia);
-    }
-
-    //metodo auxiliar da matriz
-    public static void imprimirMatriz(int[][] matriz) {
-        for (int[] fila : matriz) {
-            for (int valor : fila) {
-                System.out.print(valor + " ");
-            }
-            System.out.println();
-        }
-    }
 }
 
 
