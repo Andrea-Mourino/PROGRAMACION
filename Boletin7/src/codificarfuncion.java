@@ -10,6 +10,10 @@ public class codificarfuncion {
         for (int i=0; i<lista.length; i++) {
             lista [i] = i*2;
         }
+        int [] novaLista = copiarLista (lista);
+        for (int elemento : novaLista) {
+            System.out.println(elemento);
+        }
     }
 
     public static int [] copiarLista(int [] listaACopiar){
@@ -19,12 +23,7 @@ public class codificarfuncion {
             novaLista[i] = listaACopiar[i];
         }
         return novaLista;
-
     }
-
-
-
-
 }
 
 
