@@ -22,5 +22,23 @@ public class Main {
         System.out.println(Character.isWhitespace(caracter)); //si hay un espacio en blanco y lo cuenta
         System.out.println(Character.isLowerCase(caracter)); //si hay minuscula
         System.out.println(Character.toUpperCase(caracter)); //si hay mayuscula
+
+
+        char[] nom= {'M','a','u','e','l'};
+
+        String nome= "Manuel";
+        nome ="Pedro\n \bPicapiedra \u2661"; // la \n significa nueva linea
+        String apelido = new String ("Guimarey");
+        boolean opcion= true;
+
+        System.out.println(nome);
+
+        System.out.println(nom.length);
+        System.out.println("A lonxitude do array é" + nom.length);
+        System.out.println("A lonxitude do String é" + nome.length());
+        System.out.println("A lonxitude de \"nome\" é " + nome.length() + "\'" + opcion + "\'");
+        System.out.println("Imprimimos \\texto\\ \ncon \tcontrabarras \f");
+        System.out.println("Tres tristes tigres \r comen \b\b\btrigo");
+        String nomeCompleto = nome.concat (apelido);
     }
 }
