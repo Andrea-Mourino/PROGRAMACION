@@ -16,4 +16,4 @@ public class ej8 {
         return decimal;
     }
 }
-}
+

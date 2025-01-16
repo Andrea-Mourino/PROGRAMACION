@@ -1,5 +1,4 @@
 public class ej4 {
-    package org.example;
      public static void main(String[] args) {
             String numero = "55";
             String numeroConPuntos = "";

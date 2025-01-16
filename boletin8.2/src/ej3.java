@@ -1,6 +1,4 @@
 public class ej3 {
-    package org.example;
-    {
         public static void main(String[] args) {
             String cadea="Galicia esta en españa y estamos en 2025";
             int numero=3;
@@ -89,4 +87,4 @@ public class ej3 {
         }
 
     }
-}
+
