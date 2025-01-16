@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ahorcado {
     private static int contador=0;
     public static void main(String[] args) {
