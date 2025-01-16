@@ -30,4 +30,3 @@ public class ej7 {
         return "iguales";
     }
 }
-}
